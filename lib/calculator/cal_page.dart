@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'report_page.dart';
+import '../report/report_page.dart';
 
 
 class FirstScreen extends StatefulWidget {
   @override
-  _FirstRoute createState() {
-    return _FirstRoute();
+  FirstRoute createState() {
+    return FirstRoute();
   }
 }
 
-class _FirstRoute extends State<FirstScreen> {
+class FirstRoute extends State<FirstScreen> {
   bool isCheck = false;
   TextEditingController oldUnit = TextEditingController();
   TextEditingController newUnit = TextEditingController();
@@ -135,10 +135,9 @@ class _FirstRoute extends State<FirstScreen> {
                         onChanged: (bool? value) {
                           setState(() {
                             isCheck = value!;
-                            if(isCheck == false){
+                            if (isCheck == false) {
                               trash.text = "0";
-                            }
-                            else{
+                            } else {
                               trash.text = "20";
                             }
                           });
@@ -151,7 +150,7 @@ class _FirstRoute extends State<FirstScreen> {
                         // initialValue: "5",
                         keyboardType: TextInputType.number,
                         decoration: InputDecoration(
-                          labelText: 'ราคาค่าไฟต่อหน่วย',
+                          labelText: 'ค่าขยะ',
                           labelStyle: TextStyle(fontSize: 12),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(15),
@@ -169,10 +168,10 @@ class _FirstRoute extends State<FirstScreen> {
                   },
                 ),
               ]),
-            )
+             ),
             ),
-          ],
-        )
+        ],
+      ),
     );
   }
 

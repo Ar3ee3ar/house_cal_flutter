@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'cal_page.dart';
-import 'report_page.dart';
+import 'calculator/cal_page.dart';
+import 'report/report_page.dart';
+import 'login/login_page.dart';
 
 void main() {
   runApp(MaterialApp(
-    title: 'Navigation Basics',
-    home: FirstScreen(),
+    title: 'Rent app',
+    home: login(),
   ));
 }
+
