@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../report/report_page.dart';
+import '../model/profile.dart';
 
 
 class FirstScreen extends StatefulWidget {
@@ -18,6 +19,8 @@ class FirstRoute extends State<FirstScreen> {
   final count = TextEditingController(text: "1");
   final trash = TextEditingController(text: "0");
   final roomCost = TextEditingController(text: "1500");
+
+  // Profile profile = Profile();
 
   @override
   Widget build(BuildContext context) {
